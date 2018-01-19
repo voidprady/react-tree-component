@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+.App h1 {
+  text-transform:uppercase;
+  margin-left:250px;
+  font-family:'Titillium Web',sans-serif;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 250px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav li {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align:left;
+    text-transform:uppercase;
+    font-family:'Titillium Web',sans-serif;
+}
+.sidenav li:hover {
+    color: #f1f1f1;
+}
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+}
+#content {
+  display:none;
+  padding: 20px 8px 20px 8px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav li {font-size: 13px;}
+    .App h1 {font-size: 25px;}
+}
