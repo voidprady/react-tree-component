@@ -24,14 +24,20 @@ class App extends Component {
         active : "false",
         children:[
           {
-            name : "first child"
+            name : "first child",
+            children: null,
+            content : "first child content"
           },
           {
-            name : "second child"
+            name : "second child",
+            children: null,
+            content: "second child content"
           },
           {
-            name : "third child"
-          },
+            name : "third child",
+            children:null,
+            content: "third child content"
+          }
         ]
       },{
         name : "second file",
@@ -44,13 +50,12 @@ class App extends Component {
       }
     ]
   }
-  showContentHandler = (index) => {
+  showContentHandler = (contentText) => {
     let content = document.getElementById('content');
       content.style.display = 'inline-block'
-    if(this.state.data[index].content){
-      content.innerHTML = this.state.data[index].content;
+    if(contentText){
+      content.innerHTML = contentText;
     }
-
   }
 
   render() {
